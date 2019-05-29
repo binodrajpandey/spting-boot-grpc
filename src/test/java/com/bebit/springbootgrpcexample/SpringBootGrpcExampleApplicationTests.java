@@ -17,10 +17,10 @@ public class SpringBootGrpcExampleApplicationTests {
   @Autowired
   private HelloWorldClient helloWorldClient;
 
-	@Test
+  @Test
   public void sayHello() {
-    String message = helloWorldClient.sayHello("Binod", "Pandey");
+    String message = helloWorldClient.sayHello("1");
     assertEquals("hello Binod Pandey!", message);
-	}
+  }
 
 }

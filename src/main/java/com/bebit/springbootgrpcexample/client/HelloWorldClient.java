@@ -3,7 +3,7 @@ package com.bebit.springbootgrpcexample.client;
 import com.bebit.Greeting;
 import com.bebit.HelloWorldServiceGrpc;
 import com.bebit.HelloWorldServiceGrpc.HelloWorldServiceBlockingStub;
-import com.bebit.Person;
+import com.bebit.User;
 
 import javax.annotation.PostConstruct;
 
@@ -29,8 +29,8 @@ public class HelloWorldClient {
 
   }
 
-  public String sayHello(String firstName, String lastName) {
-    Person person = Person.newBuilder().setFirstName(firstName).setLastName(lastName).build();
+  public String sayHello(String id) {
+    User person = User.newBuilder().setUserId(id).build();
     logger.info("client sending {}", person);
     Greeting greeting = helloWorldServiceBlockingStub.sayHello(person);
     logger.info("Client received message {}", greeting);
