@@ -12,6 +12,7 @@ com/bebit/UserOrBuilder.class
 com/bebit/HelloWorldServiceGrpc$HelloWorldServiceFileDescriptorSupplier.class
 com/bebit/User$Builder.class
 com/bebit/springbootgrpcexample/repositories/UserRepository.class
+com/bebit/springbootgrpcexample/client/HelloWorldClient.class
 com/bebit/HelloWorldServiceGrpc$HelloWorldServiceBlockingStub.class
 com/bebit/HelloWorld.class
 com/bebit/HelloWorldServiceGrpc$HelloWorldServiceMethodDescriptorSupplier.class
